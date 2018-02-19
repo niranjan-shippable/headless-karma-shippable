@@ -1,9 +1,6 @@
 language: node_js
 node_js:
   - "8"
-  
-addons:
-  chrome: stable
 
 script:
   # if you wish to start google-chrome manually in headless mode
