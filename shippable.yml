@@ -10,3 +10,4 @@ script:
   #- google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost:3000
   - yarn install
   - npm run test
+  - npm run search_test
