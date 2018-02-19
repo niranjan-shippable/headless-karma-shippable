@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "8"
+  
+addons:
+  chrome: stable
+
+script:
+# start your web application and listen on `localhost:3000`
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost:3000
+  - yarn install
+  #- yarn run test
+  - npm run test
