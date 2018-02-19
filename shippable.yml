@@ -12,4 +12,4 @@ script:
   - yarn install
   - npm run test
   - npm run test_search
-  - npm run test_selenium_webdriver
+  #- npm run test_selenium_webdriver
