@@ -14,7 +14,7 @@ module.exports = function(config) {
       MyHeadlessChrome: {
         base: 'ChromeHeadless',
         flags: ['--disable-translate', '--disable-extensions',
-                '--no-first-run', '--disable-background-networking',
+                '--no-first-run', '--disable-background-networking', '--no-sandbox',
                 '--remote-debugging-port=9223']
       }
     },
