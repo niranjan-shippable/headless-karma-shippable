@@ -7,7 +7,7 @@
   "author": "Eric Bidelman <ebidel@gmail.com>",
   "license": "Apache-2.0",
   "scripts": {
-    "test": "karma start --single-run --browsers MyHeadlessChrome karma.conf.js"
+    "test": "karma start --single-run --browsers MyHeadlessChrome karma.conf.js",
     "test_search" : "node search_test.js"
   },
   "devDependencies": {
