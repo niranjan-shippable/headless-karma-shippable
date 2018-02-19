@@ -1,6 +1,6 @@
-const chrome = require('../chrome');
-const firefox = require('../firefox');
-const {Builder, By, Key, until} = require('..');
+const chrome = require('selenium-webdriver/chrome'),
+    firefox = require('selenium-webdriver/firefox');
+const {Builder, By, Key, until} = require('selenium-webdriver');
 
 const width = 640;
 const height = 480;
