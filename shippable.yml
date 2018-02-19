@@ -6,8 +6,9 @@ addons:
   chrome: stable
 
 script:
-  # start your web application and listen on `localhost:3000`
-  #- google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost:3000
+  # if you wish to start google-chrome manually in headless mode
+  # add --no-sandbox --disable-setuid-sandbox if you are running as root
+  #- google-chrome-stable --headless --no-sandbox --disable-setuid-sandbox --disable-gpu --remote-debugging-port=9222 http://localhost:3000
   - yarn install
   - npm run test
-  #- npm run test_search
+  - npm run test_search
