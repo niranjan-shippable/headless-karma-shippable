@@ -1,6 +1,6 @@
 module.exports = function(config) {
   config.set({
-    frameworks: ['mocha', 'chai', 'puppeteer'],
+    frameworks: ['mocha', 'chai'],
     files: [
       'test/**/*.js'
     ],
