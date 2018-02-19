@@ -1,2 +1,2 @@
-# headless-karma-travis
-Testing Headless Chrome on Travis + Karma + Mocha + Chai
+# headless-karma-Shippable
+Testing Headless Chrome on Shippable + Karma + Mocha + Chai + Puppeteer
