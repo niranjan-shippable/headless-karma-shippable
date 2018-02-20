@@ -2,11 +2,19 @@ language: node_js
 node_js:
   - "8"
 
-script:
-  # if you wish to start google-chrome manually in headless mode
-  # add --no-sandbox --disable-setuid-sandbox if you are running as root
-  #- google-chrome-stable --headless --no-sandbox --disable-setuid-sandbox --disable-gpu --remote-debugging-port=9222 http://localhost:3000
-  - yarn install
-  - npm run test
-  - npm run test_search
-  #- npm run test_selenium_webdriver
+build:
+  pre_ci_boot:
+    image_name: drydock/u14all
+    image_tag: master
+    pull: true
+    #options: "--net=host"
+
+  ci:
+    # if you wish to start google-chrome manually in headless mode
+    # add --no-sandbox --disable-setuid-sandbox if you are running as root
+    #- google-chrome-stable --headless --no-sandbox --disable-setuid-sandbox --disable-gpu --remote-debugging-port=9222 http://localhost:3000
+    - yarn install
+    - npm run test
+    - npm run test_search
+    #- npm run test_selenium_webdriver
+  
